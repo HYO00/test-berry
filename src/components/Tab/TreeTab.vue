@@ -1,11 +1,12 @@
 <template>
     <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
       <el-tab-pane label="Group" name="first">
-            <button style="font-size: 14px;">Add Group</button>
+            <button style="font-size: 14px; background-color: rgb(188, 114, 114);">Add Group</button>
             <TreeComponent />
       </el-tab-pane>
       <el-tab-pane label="Server" name="second">
-        <button style="font-size: 14px;">Add Server</button>
+        <DrawerForm />
+        <!-- <button style="font-size: 14px;">Add Server</button> -->
         <ServerTree />
       </el-tab-pane>
     </el-tabs>
@@ -14,6 +15,7 @@
 <script lang="ts" setup>
 import TreeComponent from '../Tree/TreeComponent.vue';
 import ServerTree from '../Tree/ServerTree.vue'
+import DrawerForm from '../Drawer/DrawerForm.vue'
 import { ref } from 'vue'
 import type { TabsPaneContext } from 'element-plus'
 

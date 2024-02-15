@@ -6,7 +6,7 @@
       <!-- <TreeComponent /> -->
     </el-aside>
     <el-main>
-      <ServerForm />
+      <ServerCanvas />
       <!-- <NetWorkGraph /> -->
       <!-- <div>HelloWorld</div> -->
     </el-main>
@@ -23,5 +23,5 @@
 // import ListItem from "./../components/List/ListItem.vue"
 // import NetWorkGraph from "./../components/Canvas/NetworkGraph.vue"
 import TreeTab from "./../components/Tab/TreeTab.vue"
-import ServerForm from "./../components/Form/ServerFrom.vue"
+import ServerCanvas from "./../components/ServerCanvas/ServerCanvas.vue"
 </script>
